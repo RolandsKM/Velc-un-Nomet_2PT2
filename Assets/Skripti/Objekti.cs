@@ -12,6 +12,12 @@ public class Objekti : MonoBehaviour {
     public GameObject e61;
     public GameObject eskavators;
 
+
+    public GameObject traktors;
+    public GameObject traktors5;
+    public GameObject policija;
+    public GameObject ugunsdzeseji;
+
     [HideInInspector]
 	public Vector2 atkrMKoord;
 	[HideInInspector]
@@ -28,6 +34,18 @@ public class Objekti : MonoBehaviour {
     public Vector2 b2Koord;
     [HideInInspector]
     public Vector2 eskKord;
+
+    [HideInInspector]
+    public Vector2 traktorsKoord;
+    [HideInInspector]
+    public Vector2 traktors5Koord;
+    [HideInInspector]
+    public Vector2 policijaKoord;
+    [HideInInspector]
+    public Vector2 ugunsKoord;
+
+
+
 
     public Canvas kanva;
 	public AudioSource audioAvots;
@@ -46,6 +64,12 @@ public class Objekti : MonoBehaviour {
         e61Koord = e61.GetComponent<RectTransform>().localPosition;
         b2Koord = b2.GetComponent<RectTransform>().localPosition;
         eskKord = eskavators.GetComponent<RectTransform>().localPosition;
+
+        traktorsKoord = traktors.GetComponent<RectTransform>().localPosition;
+        traktors5Koord = traktors5.GetComponent<RectTransform>().localPosition;
+        policijaKoord = policija.GetComponent<RectTransform>().localPosition;
+        ugunsKoord = ugunsdzeseji.GetComponent<RectTransform>().localPosition;
+        audioAvots.Play();
     }
 
     // Update is called once per frame

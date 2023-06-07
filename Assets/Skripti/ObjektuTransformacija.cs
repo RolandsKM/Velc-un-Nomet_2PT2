@@ -15,11 +15,11 @@ public class ObjektuTransformacija : MonoBehaviour
 		{
 			if (Input.GetKey(KeyCode.Z))
 			{
-				objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.Rotate(0, 0, Time.deltaTime * 20f);
+				objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.Rotate(0, 0, Time.deltaTime * 10f);
 			}
 			if (Input.GetKey(KeyCode.X))
 			{
-				objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.Rotate(0, 0, -Time.deltaTime * 20f);
+				objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.Rotate(0, 0, -Time.deltaTime * 10f);
 			}
 			if (Input.GetKey(KeyCode.UpArrow))
 			{
